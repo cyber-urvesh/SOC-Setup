@@ -1,1 +1,1 @@
-# SOC-Setup
+# Open SOC Setup Guide 
