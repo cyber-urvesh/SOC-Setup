@@ -1,6 +1,5 @@
 # Open SOC Setup Guide 
 
-
 ## Installation
 
 Setup Elasticsearch
@@ -14,3 +13,16 @@ Setup Elasticsearch
   sudo apt-get update && sudo apt-get install elasticsearch
 ```
 The username and password for the elastic user will be displayed right in the terminal itself as soon as the installation is completed. 
+
+Now we need to edit **elasticsearch.yml** 
+
+We need to modify **network.host** parameter and replace our IP address. Save the file and start elasticsearch servies using the commands 
+
+```
+systemctl start elasticsearch
+systemctl enable elasticsearch
+```
+You can verify the running status of elasticsearch using the command: 
+```
+systemctl status elasticsearch
+```
